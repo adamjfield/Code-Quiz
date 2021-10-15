@@ -13,3 +13,11 @@ function timerSetup() {
     }
   }, 1000);
 }
+
+document.addEventListener("click", function (event) {
+  if (event.target === btnElement) {
+    containerElement.style.display = "none";
+    timerSetup();
+    displayQuestions();
+  }
+});
