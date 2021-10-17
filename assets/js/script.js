@@ -6,7 +6,7 @@ function timerSetup() {
     timer--;
     var timerReset = (timeElement.textContent = "Time:" + " " + timer);
     timer = timer;
-    if (time <= 0) {
+    if (timer <= 0) {
       clearInterval(timeCounter);
 
       timeElement.textContent = timerReset;

@@ -1,7 +1,7 @@
 var timeElement = document.querySelector("#time");
 var containerElement = document.querySelector(".container");
 var btnElement = document.querySelector("#play");
-var quesContain = document.querySelector(".questionContainer");
+var quesContain = document.querySelector(".questionContain");
 var titleElement = document.querySelector("#title");
 var olElement = document.querySelector("#questions");
 var finishPage = document.querySelector(".finish-page");
@@ -57,3 +57,13 @@ var questions = [
     answer: "Arrays",
   },
 ];
+
+// function to add question to HTML
+function displayQuestions() {
+  var holdQ1Title = questions[i].title;
+  titleElement.textContent = holdQ1Title;
+  var holdq1Choice1 = questions[i].choices[0];
+  var holdq1Choice2 = questions[i].choices[1];
+  var holdq1Choice3 = questions[i].choices[2];
+  var holdq1Choice4 = questions[i].choices[3];
+}
